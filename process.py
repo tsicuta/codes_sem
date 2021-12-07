@@ -23,4 +23,4 @@ try:
 except Exception as e:
     print('ошибка') #you died, try again?
 
-print(name[0], kolvo, end = '_')
+print(name[0],'_', kolvo, end = '')

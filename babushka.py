@@ -1,7 +1,7 @@
 def add_s(n):
     count = 0
     a = set ()
-
+    name = [ ]
     for i in range (n):
         print('Введите учащегося №', i+1, 'Введите 1, чтобы остановить ввод')
         f = True
@@ -11,9 +11,14 @@ def add_s(n):
                 print()
                 break
             else:
+                #забиваем список
                 set.add (a, x)
-                print('введите кол-во баллов:', end = ' ')
-                kolvo = int(input())
+
+                #вытаскиваем имя и колво баллов
+                b = x.split(' ')
+                print(b)
+                name = b[0]
+                kolvo = b[2]
         except Exception as e:
             print('ошибка')
             f = False
