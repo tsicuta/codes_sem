@@ -25,11 +25,11 @@ def add_s(n):
     return (name)
 #--------------------------------------
 #листы
-# list_1 = set()
-# list_2 = set()
-# list_3 = set()
-# ind = 0
-# name = dict()
+list_1 = set()
+list_2 = set()
+list_3 = set()
+ind = 0
+name = dict()
 # #цикл ввода
 
 # while ind < 5:
