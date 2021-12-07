@@ -4,6 +4,7 @@ def add_s(n):
 
     for i in range (n):
         print('Введите учащегося №', i+1, 'Введите 1, чтобы остановить ввод')
+        f = True
         try:
             x = input()
             if x == '1':
@@ -15,6 +16,9 @@ def add_s(n):
                 kolvo = int(input())
         except Exception as e:
             print('ошибка')
+            f = False
+        if f == False:
+            add_s(n)
 
     print(count)
     print(*a, sep=', ')
